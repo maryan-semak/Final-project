@@ -1,0 +1,32 @@
+.slider {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    &__item {
+        padding: 300px 100px; 
+        color: $primary-color; 
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+}
+.item {
+    &--one {
+    background: url(../images/hoverla-verkhovyna-life-1__large.jpg) no-repeat center/cover;
+}
+    &--two {
+        background: url(../images/nesamovute.jpg) no-repeat center/cover;
+    } 
+    &--tree {
+        background: url(../images/pip-ivan-1.jpg) no-repeat center/cover;
+    }
+    &--four {
+        background: url(../images/pip-ivan.jpg) no-repeat center/cover;
+    }
+    &--five {
+        background: url(../images/spuchi.jpg) no-repeat center/cover;
+    }
+    &--six {
+        background: url(../images/nesamovute-pan.jpg) no-repeat center/cover;
+    }
+}

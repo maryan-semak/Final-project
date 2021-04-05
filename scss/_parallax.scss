@@ -1,0 +1,75 @@
+.head {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.parallax {
+    position: relative;
+    width: 100%;
+ 
+    &__mountain {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;  
+    }
+    &__mountain_1 {
+      background: url('../images/parallax/m_1.png') 0 0 /cover no-repeat;
+      z-index:-10;
+    }
+    &__mountain_2 {
+      z-index: 1;  
+      background: url('../images/parallax/m_2.png') bottom right /45% no-repeat;  
+    }
+    &__mountain_3 {
+      z-index: 1;  
+      background: url('../images/parallax/m_3.png') left bottom /100% no-repeat;  
+    }
+   &__fog {
+        background: url('../images/parallax/fog_1.png') bottom / 100% no-repeat; 
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+}
+.content {
+    position: relative;
+    
+    &__body {
+       max-width: 1170px; 
+       height: auto;
+       margin: 50px auto 200px auto;
+    }
+    &__header {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding: 0px 50px;
+
+    }
+    &__title {
+        padding-top: 600px; 
+        
+        font-size: 100px;
+    }
+    &__subtitle {
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+    &__img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+img {
+    width: 100%;
+    height: 100%;
+}

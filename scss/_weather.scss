@@ -1,0 +1,16 @@
+.weather {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    &__img {
+        max-width: 120px;
+        margin: 0 auto;
+    }
+}
+ ul {
+    list-style: none;
+}
+li {
+    margin-right: 40px;
+}

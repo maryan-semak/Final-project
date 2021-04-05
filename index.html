@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="./js/map.js"></script>
+  <script type="text/javascript" src="./js/parallax.js"></script>
+  <script type="text/javascript" src="./js/weather.js"></script>
+  <script type="text/javascript" src="./js/nav.js"></script>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Carpatian mounts</title>
+
+</head>
+<body>
+  <section class="section__navigation section">
+    <div class="container">
+      <nav class="navigation">
+        <div class="icon">
+          <i class="fas fa-align-justify"></i>
+        </div>
+        <div class="navigation__logo animate__animated animate__fadeInDown">
+            Nature
+        </div> 
+        <div class="navigation__menu">
+            <ul class="navigation__list">
+                <li class="navigation__li animate__animated animate__fadeInDown"><a href="#">Home</a></li>
+                <li class="navigation__li animate__animated animate__fadeInDown"><a href="#gallery">Gallery</a></li>
+                <li class="navigation__li animate__animated animate__fadeInDown"><a href="#map">Map</a></li>
+                <li class="navigation__li animate__animated animate__fadeInDown"><a href="#videom">Video</a></li>
+                <li class="navigation__li animate__animated animate__fadeInDown"><a href="#weather">Weather</a></li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+  </section > 
+  <section class="section__parallax section">
+    <div class="head">
+      <div class="parallax">
+        <div class="parallax__mountain parallax__mountain_1"></div>
+        <div class="parallax__mountain parallax__mountain_2"></div>
+        <div class="parallax__mountain parallax__mountain_3"></div>
+        <div class="parallax__fog"></div>
+        <div class="content">
+          <div class="content__body">
+            <div class="content__header">
+              <h1 class="content__title">Carpaty</h1>
+              <h2 class="content__subtile">Site about mountains!</h2>
+              <div class="text">
+              <p>Even a first-grader knows that the highest mountain in Ukraine is Hoverla, which has 2,061 m. This peak becomes a real mecca for tourists, not only for the first time in the Carpathians, but also for the first time as tourists: climbing Hoverla attracts even those who never I did not see with my own eyes a tourist backpack, as, in fact, the mountains.
+
+                The first tourist route to the top of Hoverla was laid in 1880. There are four main routes to the mountain. Petros is the penultimate peak on the Montenegrin ridge. The mountain is spectacular and suitable for climbing at any time of year. Just note that climbing the winter Petros is not a task for beginners: such a hike is given a category of difficulty 2-A (not the most difficult route, but without the appropriate equipment, experience and a qualified instructor it is better not to stumble here).
+              </p>
+              
+              <h3>Route map:</h3>
+              <p>
+                Ivano-Frankivsk - Kvasy village - Menchul mountain meadow - Kopytsia mountain (1689 m) - Sheshul mountain (1726 m) - Shumneska mountain meadow (1590 m) - Petros mountain (2020 m) - Skopeska mountain meadow (1518 m) - Peremychka tract - Hoverla mountain (2061 m) - Breskul mountain (1911 m) - Pozhizhevskaya mountain (1822 m) - Dantsizh mountain (1850 m) - Turkul mountain (1933 m) - Nesamovite lake (1750 m) - Mali and Velyki Kizly tract - Zaroslyak shopping center - Ivano -Frankivsk</p>
+               <div class="content__img"><img src="./images/header.jpg" alt=""></div>
+               <h3>Mount Spytsia</h3>
+               <p> (1,863 m), Montenegrin ridge
+                The name "Spitz" describes well the mood of this mountain. Natural stone mounds look like giant towers. Located at an altitude of more than 1800 meters, they impress the viewer with their scale, forming entire stone corridors. Each block is up to 40 meters high.</p>
+              <div class="content__img"><img src="./images/shpyzi.jpg" alt=""></div>
+              <p>The daredevils will definitely demand a dose of adrenaline and climb the giant rocks, but be very careful, because the stone mounds are sharp as knives, and are at breakneck heights. It is better to find a good angle and take an accurate photo from a safe place.
+
+                Do you still want to climb up? Come as part of an alpine group or with climbers - both are sometimes trained in Spitz. Here, however, it is much harder to carry equipment than on the popular for climbing Dovbush Rocks, so suddenly to find a group on the rocks - a great fortune.</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <div class="faqs__container  container">
+        <div class="container">
+    </div>
+   </div>
+  </section>
+  <section class="section__map section" >
+        <div class="container" >
+            <h2 class="map__titlle titlle" >Carpatian map</h2>
+            <div id="floating-panel">
+                <b>Start: </b>
+                <select id="start">
+                  <option value="48.21095439090776, 24.47768378422168">Kozmeschic</option>
+                  <option value="48.17315751210019, 24.42118381496767">
+                    Petros
+                  </option>
+                  <option value="48.161593948926274, 24.49954723320242">
+                    Goverla
+                  </option>
+                  <option value="48.12261001742773, 24.53833331029109">
+                    Nesamovute Lake
+                  </option>
+                  <option value="48.12598080866396, 24.566995961447443">Chputchi</option>
+                  <option value="48.12397552542952, 24.530389214858822">
+                    Brebeneskul Lake
+                  </option>
+                  <option value="48.0476019817128, 24.627221884003273">
+                    Pip-Ivan
+                  </option>
+                  <option value="48.03478843536907, 24.658291632724893">Maricheika Lake</option>
+                  <option value="47.990049156279824, 24.702672904306812">Chubene</option>
+                </select>
+                <b>End: </b>
+                <select id="end">
+                  <option value="47.990049156279824, 24.702672904306812">Chubene</option>
+                  <option value="48.03478843536907, 24.658291632724893">Maricheika Lake</option>
+                  <option value="48.0476019817128, 24.627221884003273">
+                    Pip-Ivan
+                  </option>
+                  <option value="48.12397552542952, 24.530389214858822">
+                    Brebeneskul Lake
+                  </option>
+                  <option value="48.12598080866396, 24.566995961447443">Chputchi</option>
+                  <option value="48.12261001742773, 24.53833331029109">
+                    Nesamovute Lake
+                  </option>
+                  <option value="48.161593948926274, 24.49954723320242">
+                    Goverla
+                  </option>
+                  <option value="48.17315751210019, 24.42118381496767">
+                    Petros
+                  </option>
+                  <option value="48.21095439090776, 24.47768378422168">Kozmeschic</option>
+                </select>
+              </div>
+              <div id="map"></div>
+              &nbsp;
+              <div id="warnings-panel"></div>
+        </div>
+  </section>
+  <section class="section__gallery section"  id="gallery">    
+    <div class="container">
+        <h2 class="gallery__title titlle">Gallery</h2>
+          <div class="slider">
+             <div class="slider__main">
+                <div class="slider__item item--one">Hoverla</div>
+                <div class="slider__item item--two">Nesamovute lake</div>
+                <div class="slider__item item--tree">pip-ivan </div>
+                <div class="slider__item item--four">pip-ivan</div>
+                <div class="slider__item item--five">Chputsi</div>
+                <div class="slider__item item--six">Nesamovute lake</div>
+            </div>
+          </div>
+     </div>
+  </section>
+  <section class="section__video" >
+    <div class="container__video" id="videom">
+      <h2 class="video__title titlle">Video</h2>
+      <iframe id="video"  width="784" height="441"  src="https://www.youtube.com/embed/gLNDdDVAptc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="section__weather" id="weather">
+    <div class="container__weather">
+      <div class="weather">
+        <h2 class="weather__titlle titlle">weather </h2>
+        <p class="weather__title"></p>
+        <p class="weather__temp"></p>
+        <p class="weather__cloudiness"></p>
+        <ul class="weather__img">
+          <li></li>
+        </ul>
+        <p class="weather__wind"></p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+<section class="footer section">
+    <div class="footer__content">
+      <p>&copy Made for student of Beetroot Academy </p>
+    </div>
+    <div class="footer__socials">
+      <div class="social-links">
+        <div class="social-links__item">
+          <div class="social-links__icon">
+            <a href="https://www.facebook.com/groups/728887703876309"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="social-links__item">
+          <div class="social-links__icon">
+            <a href="">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          </div>
+        </div>
+        <div class="social-links__item">
+          <div class="social-links__icon">
+            <a href="https://twitter.com/mtourism_com_ua">
+            <i class="fab fa-twitter"></i>
+          </a>
+          </div>
+        </div>
+        <div class="social-links__item">
+          <div class="social-links__icon">
+            <a href="https://www.instagram.com/carpathians.ua/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/slider.js"></script>
+<script type="text/javascript" src="./js/fags" >
+  
+    </script>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMT_r60TBPAr3jMZMt-qGeuliggaRPzWc&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    
+   
+</body>
+</html>

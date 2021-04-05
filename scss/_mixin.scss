@@ -1,0 +1,9 @@
+@mixin align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin primary-border($width) {
+  border: $width solid $primary-color;
+}

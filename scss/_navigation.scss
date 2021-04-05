@@ -1,0 +1,128 @@
+.navigation {
+   
+    position:fixed;
+    width: 100%;
+    z-index: 4;
+    top: 0;  
+    max-width: inherit;
+    &__li {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0 15px ;
+        display: inline-block;
+        padding:  20px 0;
+        position: relative;
+      }
+  
+          &__li::before {
+            content: '';
+            width: 0;
+            background-color: #ffffff;
+            height: 3px;
+            position: absolute;
+            bottom:  15px;
+            transition: all 0.5s;
+          }
+           &__li:hover::before {
+            content: "";
+            width: 100%;
+          }
+    
+        &__logo {
+            position: fixed;
+            float:left;
+            margin: 16px auto auto 36px;
+            font-weight: bold;
+            font-size: 24px;  
+            color: #fff;
+            z-index: 6;
+        }
+        
+}
+.icon {
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color:#fff;
+    display: none;
+    
+}    
+  
+
+
+nav {
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+}
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0.2);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s
+
+
+
+}
+nav.black ul{
+    background: #000;
+    opacity: 0.8;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 20px;
+    position: relative;
+}
+
+@media(max-width: 560px) {
+
+    .navigation{
+        &__li {
+            margin: 0 auto;
+        }
+        &__li:hover::before {
+        content: "";
+        width: 13%;
+      }
+      &__logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;  
+          }
+       
+    }
+    .icon  {
+        display: block;
+   }
+   
+    
+    nav ul  {
+        max-height: 0px;
+        background: #000;
+     
+      
+    }
+    nav.black  ul {
+        background: #000;
+    
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4px 0;
+        text-align: center;
+    }
+    }
